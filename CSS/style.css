@@ -124,9 +124,9 @@ body {
   margin-left: 100px;
 }
 
-  .Platodeldia img{
-   margin-left: 100px; 
-  }
+.Platodeldia img {
+  margin-left: 100px;
+}
 
 .Informacion-platodeldia p {
   margin-left: 10px;
@@ -314,6 +314,23 @@ a {
   .Grid-direcciones {
     margin: 0 auto;
   }
+
+  .redessociales {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sidebar-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Informacion-platodeldia p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Saira Condensed", sans-serif;
+  }
 }
 
 /* RESPONSIVE: Tablets pequeñas o móviles grandes (<= 726px) */
@@ -352,7 +369,7 @@ a {
     border-radius: 50px;
   }
 
-  .Grid-menudeldia{
+  .Grid-menudeldia {
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -367,7 +384,7 @@ a {
     margin: 10px 0;
   }
 
-   .contenido-texto {
+  .contenido-texto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -475,19 +492,19 @@ a {
     margin: 0;
   }
 
-   .Grid-menudeldia{
+  .Grid-menudeldia {
     margin: 0 auto;
     width: 100%;
     text-align: center;
     font-size: 5px;
   }
 
-  .Informacion-platodeldia p{
+  .Informacion-platodeldia p {
     font-size: 16px;
     margin: 0;
   }
-  
-  .Platodeldia img{
+
+  .Platodeldia img {
     width: 300px;
     margin-left: 0;
   }
@@ -495,16 +512,12 @@ a {
 
 /* RESPONSIVE: Móviles muy pequeños (<= 360px) */
 @media (max-width: 360px) {
-  body {
-    overflow-x: hidden;
-  }
-  
   header {
     width: 100vw;
     box-sizing: border-box;
   }
 
-   .sidebar-nav {
+  .sidebar-nav {
     flex-direction: column;
     gap: 20px;
   }
@@ -560,19 +573,19 @@ a {
     width: 50px;
     margin: 0;
   }
-  .Grid-menudeldia{
+  .Grid-menudeldia {
     margin: 0 auto;
     width: 100%;
     text-align: center;
     font-size: 5px;
   }
 
-  .Informacion-platodeldia p{
+  .Informacion-platodeldia p {
     font-size: 16px;
     margin: 0;
   }
-  
-  .Platodeldia img{
+
+  .Platodeldia img {
     width: 300px;
     margin-left: 0;
   }
