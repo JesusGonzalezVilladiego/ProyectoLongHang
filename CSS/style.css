@@ -303,7 +303,7 @@ a {
 
 /*CSS Responsive*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1600px) {
   .Contenedor-Principal-Cosas {
     flex-direction: column;
     gap: 30px;
