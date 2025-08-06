@@ -1,0 +1,610 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*CSS HEADER*/
+.redessociales {
+  background-color: #b52427;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-family: "Saira Condensed", sans-serif;
+  padding: 0px 20px;
+  width: 100%;
+}
+
+.redessociales h3 {
+  color: #f1e3cc;
+  font-size: 20px;
+  margin: 0;
+}
+
+.icon-facebook,
+.icon-instagram {
+  font-size: 30px;
+  margin-left: 15px;
+  color: #f1e3cc;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.iconfacebook:hover,
+.iconinstagram:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+/*CSS SIDEVAR*/
+.sidebar-nav {
+  background: #b52427;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+}
+
+.Tituloh1 {
+  text-decoration: none;
+  color: #f1e3cc;
+  font-family: "Ma Shan Zheng", cursive;
+  padding: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
+.Tituloh1::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* justo en la base del h1 */
+  left: 0;
+  width: 0;
+  top: 55px;
+  height: 2px;
+  background-color: #f1e3cc;
+  transition: width 0.3s ease-in-out;
+}
+
+.Tituloh1:hover::after {
+  width: 100%;
+}
+
+/*CSS Slider*/
+.slider {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 400vw; /* 4 imágenes de 100vw */
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.slider li {
+  list-style: none;
+  width: 100vw;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*CSS contenedor principal de las cosas Como menu del dia, menu de platos y direccioness*/
+.Contenedor-Principal-Cosas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b52427;
+}
+
+/*CSS Menú del dia*/
+.Grid-menudeldia {
+  background-color: #f1e3cc;
+  height: 450px;
+  width: 550px;
+  margin-top: 30px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+.Platodeldia img {
+  margin-left: 50px;
+}
+
+.Informacion-platodeldia p {
+  margin-left: 10px;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 17px;
+  text-align: center;
+}
+
+/*CSS Platos del menu*/
+.Gridplatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1e3cc;
+  height: 450px;
+  width: 550px;
+  margin-top: 30px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+.Categoria-arroz {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.imagen-arroz img {
+  height: 100px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.contenido-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.Categoria-arroz .contenido-texto {
+  margin-right: 50px;
+}
+
+.contenido-texto h3 {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Saira Condensed", sans-serif;
+  color: #b52427;
+}
+
+.contenido-texto p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.contenido-texto img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.Categoria-chopsuey {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.imagen-chopsuey img {
+  height: 100px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.Categoria-tallarines {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-right: 90px;
+}
+
+.imagen-tallarines img {
+  height: 100px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.Grid-direcciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1e3cc;
+  width: 600px;
+  margin-top: 30px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.Grid-direcciones h5 {
+  color: #b52427;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.Grid-direcciones h1 {
+  color: #b52427;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.Grid-direcciones h5 {
+  margin-top: 10px;
+}
+
+.Grid-direcciones table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+
+.Grid-direcciones p {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 18px;
+}
+
+footer {
+  display: flex;
+  background: #f1e3cc;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.Lugar h6,
+h5 {
+  color: #b52427;
+}
+
+.Lugar ul {
+  padding-left: 0;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  color: #996600;
+  text-decoration: none;
+}
+
+.Creditos {
+  color: #666;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.Mapadelsitio {
+  margin-bottom: 100px;
+}
+
+.Mapadelsitio ul {
+  padding-left: 0px;
+}
+
+/*CSS Responsive*/
+@media (max-width: 1400px) {
+  .Contenedor-Principal-Cosas {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  .Gridplatos,
+  .Grid-direcciones {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+    border-radius: 50px;
+  }
+
+  .redessociales {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sidebar-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Informacion-platodeldia p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Saira Condensed", sans-serif;
+  }
+  .Grid-menudeldia {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 5px;
+  }
+
+  .Informacion-platodeldia p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .Platodeldia img {
+    width: 300px;
+    margin-left: 0px;
+  }
+}
+
+/* RESPONSIVE: Tablets pequeñas o móviles grandes (<= 726px) */
+@media (max-width: 726px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .redessociales {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sidebar-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Tituloh1 {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .slider {
+    width: 100%;
+    height: 400px;
+  }
+
+  .Gridplatos,
+  .Grid-direcciones {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+    border-radius: 50px;
+  }
+
+  .Grid-menudeldia {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .Categoria-arroz,
+  .Categoria-chopsuey,
+  .Categoria-tallarines {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .contenido-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .Categoria-arroz .contenido-texto {
+    margin-left: 50px;
+    text-align: center;
+  }
+
+  .Categoria-arroz .contenido-texto img {
+    margin: 0;
+    width: 50px;
+  }
+
+  .Categoria-chopsuey .contenido-texto img {
+    width: 50px;
+    margin: 0;
+  }
+
+  .Categoria-tallarines {
+    margin: 0;
+  }
+
+  .Categoria-tallarines .contenido-texto {
+    text-align: center;
+  }
+
+  .Categoria-tallarines .contenido-texto img {
+    width: 50px;
+    margin: 0;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .Mapadelsitio,
+  .Lugar,
+  .Creditos {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* RESPONSIVE: Móviles (<= 600px) */
+@media (max-width: 600px) {
+  .sidebar-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Tituloh1 {
+    font-size: 22px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .Creditos,
+  .Mapadelsitio,
+  .Lugar {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contenido-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .Categoria-arroz .contenido-texto {
+    margin-left: 50px;
+    text-align: center;
+  }
+
+  .Categoria-arroz .contenido-texto img {
+    margin: 0;
+    width: 50px;
+  }
+
+  .Categoria-chopsuey .contenido-texto img {
+    width: 50px;
+    margin: 0;
+  }
+
+  .Categoria-tallarines {
+    margin: 0;
+  }
+
+  .Categoria-tallarines .contenido-texto {
+    text-align: center;
+  }
+
+  .Categoria-tallarines .contenido-texto img {
+    width: 50px;
+    margin: 0;
+  }
+
+  .Grid-menudeldia {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 5px;
+  }
+
+  .Informacion-platodeldia p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .Platodeldia img {
+    width: 300px;
+    margin-left: 0;
+  }
+}
+
+/* RESPONSIVE: Móviles muy pequeños (<= 360px) */
+@media (max-width: 360px) {
+  header {
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .sidebar-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Tituloh1 {
+    font-size: 22px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .Creditos,
+  .Mapadelsitio,
+  .Lugar {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contenido-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .Categoria-arroz .contenido-texto {
+    margin-left: 50px;
+    text-align: center;
+  }
+
+  .Categoria-arroz .contenido-texto img {
+    margin: 0;
+    width: 50px;
+  }
+
+  .Categoria-chopsuey .contenido-texto img {
+    width: 50px;
+    margin: 0;
+  }
+
+  .Categoria-tallarines {
+    margin: 0;
+  }
+
+  .Categoria-tallarines .contenido-texto {
+    text-align: center;
+  }
+
+  .Categoria-tallarines .contenido-texto img {
+    width: 50px;
+    margin: 0;
+  }
+  .Grid-menudeldia {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 5px;
+  }
+
+  .Informacion-platodeldia p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .Platodeldia img {
+    width: 300px;
+    margin-left: 0;
+  }
+}
